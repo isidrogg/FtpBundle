@@ -58,7 +58,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Isidrogg\Bundle\FtpBundle\IjankiFtpBundle(),
+        new Isidrogg\Bundle\FtpBundle\IsidroggFtpBundle(),
     );
 }
 ```
