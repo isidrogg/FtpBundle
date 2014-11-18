@@ -1,6 +1,6 @@
 <?php
 
-namespace Isidro\Bundle\FtpBundle;
+namespace Isidrogg\Bundle\FtpBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
