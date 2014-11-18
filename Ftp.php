@@ -32,7 +32,8 @@ class Ftp
             try {
                 $this->resource = call_user_func_array($func, $args);
             } catch (\ErrorException $e) {
-                throw new FtpException($e->getMessage());
+                //throw new FtpException($e->getMessage());
+                echo $e->getMessage();
             }
             $result = null;
 
