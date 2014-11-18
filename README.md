@@ -15,7 +15,7 @@ Add the following entries to the deps in the root of your project file:
 ```
 [IjankiFtpBundle]
     git=git://github.com/iJanki/FtpBundle.git
-    target=bundles/Ijanki/Bundle/FtpBundle
+    target=bundles/Isidrogg/Bundle/FtpBundle
 ```
 
 Now, run the vendors script to download the bundle:
@@ -42,7 +42,7 @@ Add the following dependency to your composer.json file:
 
     "require": {
         # ..
-        "ijanki/ftp-bundle": "*"
+        "isidrogg/ftp-bundle": "*"
         # ..
     }
 
@@ -58,7 +58,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Ijanki\Bundle\FtpBundle\IjankiFtpBundle(),
+        new Isidrogg\Bundle\FtpBundle\IjankiFtpBundle(),
     );
 }
 ```
@@ -68,13 +68,13 @@ public function registerBundles()
 ``` php
 <?php
 
-use Ijanki\Bundle\FtpBundle\Exception\FtpException;
+use Isidrogg\Bundle\FtpBundle\Exception\FtpException;
 
 public function indexAction()
 {
     //...
     try {
-        $ftp = $this->container->get('ijanki_ftp');
+        $ftp = $this->container->get('isidrogg_ftp');
     	$ftp->connect($host);
     	$ftp->login($username, $password);
     	$ftp->put($destination_file, $source_file, FTP_BINARY);
