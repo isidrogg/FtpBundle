@@ -1,6 +1,6 @@
 <?php
 
-namespace Ijanki\Bundle\FtpBundle\Exception;
+namespace Isidrogg\Bundle\FtpBundle\Exception;
 
 /**
 *

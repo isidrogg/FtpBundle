@@ -13,8 +13,8 @@ $loader->register();
 
 spl_autoload_register(function($class) {
     $class = ltrim($class, '\\');
-    if (0 === strpos($class, 'Ijanki\Bundle\FtpBundle\\')) {
-        $file = __DIR__.'/../'.str_replace('\\', '/', substr($class, strlen('Ijanki\Bundle\FtpBundle\\'))).'.php';
+    if (0 === strpos($class, 'Isidrogg\Bundle\FtpBundle\\')) {
+        $file = __DIR__.'/../'.str_replace('\\', '/', substr($class, strlen('Isidrogg\Bundle\FtpBundle\\'))).'.php';
         if (file_exists($file)) {
             require $file;
         }

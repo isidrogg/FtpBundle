@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="ijanki_ftp.class">Ijanki\Bundle\FtpBundle\Ftp</parameter>
+        <parameter key="isidrogg_ftp.class">Isidrogg\Bundle\FtpBundle\Ftp</parameter>
     </parameters>
 
     <services>
-        <service id="ijanki_ftp" class="%ijanki_ftp.class%">
+        <service id="isidrogg_ftp" class="%isidrogg_ftp.class%">
         </service>
     </services>
 

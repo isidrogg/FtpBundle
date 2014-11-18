@@ -1,8 +1,8 @@
 <?php
 
-namespace Ijanki\Bundle\FtpBundle;
+namespace Isidrogg\Bundle\FtpBundle;
 
-use Ijanki\Bundle\FtpBundle\Exception\FtpException;
+use Isidrogg\Bundle\FtpBundle\Exception\FtpException;
 
 class Ftp
 {
