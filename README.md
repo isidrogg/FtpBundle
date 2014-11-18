@@ -14,8 +14,8 @@ Add the following entries to the deps in the root of your project file:
 
 ```
 [IjankiFtpBundle]
-    git=git://github.com/iJanki/FtpBundle.git
-    target=bundles/Isidrogg/Bundle/FtpBundle
+    git=git://github.com/isidrogg/FtpBundle.git
+    target=bundles/isidrogg/Bundle/FtpBundle
 ```
 
 Now, run the vendors script to download the bundle:
