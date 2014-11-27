@@ -38,7 +38,8 @@ class Ftp
             $result = null;
 
         } elseif (!is_resource($this->resource)) {
-            throw new FtpException("Not connected to FTP server. Call connect() or ssl_connect() first.");
+            //throw new FtpException("Not connected to FTP server. Call connect() or ssl_connect() first.");
+            echo "Not connected to FTP server. Call connect() or ssl_connect() first.";
         } else {
             array_unshift($args, $this->resource);
             try {
