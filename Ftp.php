@@ -11,7 +11,8 @@ class Ftp
     public function __construct()
     {
         if (!extension_loaded('ftp')) {
-            throw new \Exception("PHP extension FTP is not loaded.");
+            //throw new \Exception("PHP extension FTP is not loaded.");
+            echo "PHP extension FTP is not loaded.";
         }
     }
 
@@ -25,7 +26,8 @@ class Ftp
         $func = 'ftp_' . $name;
 
         if (!function_exists($func)) {
-            throw new \Exception("Call to undefined method Ftp::$name().");
+            //throw new \Exception("Call to undefined method Ftp::$name().");
+            echo "Call to undefined method Ftp::$name().";
         }
 
         if ($func === 'ftp_connect' || $func === 'ftp_ssl_connect') {
@@ -60,7 +62,8 @@ class Ftp
     public function putContents($file_name, $data, $mode = FTP_ASCII)
     {
         if (!is_resource($this->resource)) {
-            throw new FtpException("Not connected to FTP server. Call connect() or ssl_connect() first.");
+            //throw new FtpException("Not connected to FTP server. Call connect() or ssl_connect() first.");
+            echo "Not connected to FTP server. Call connect() or ssl_connect() first.";
         }
         $temp = tmpfile();
         fwrite($temp, $data);
@@ -89,7 +92,8 @@ class Ftp
                 if ($path !== '') $this->mkdir($path);
             } catch (FtpException $e) {
                 if (!$this->isDir($path)) {
-                    throw new FtpException("Cannot create directory '$path'.");
+                    //throw new FtpException("Cannot create directory '$path'.");
+                    echo "Cannot create directory '$path'.";
                 }
             }
             $path .= '/';
